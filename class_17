@@ -1,0 +1,99 @@
+# >>-------------------------------Inheritance--------------------------------------<<
+# >>------------------------------Multilevel Inheritance----------------------------<<
+
+# #Parent class
+# class Math():
+#     def __init__(self,x,y):
+#         self.x=x
+#         self.y=y
+#     def sum(self):
+#         print(self.x+self.y)
+# # x=int(input("Enter the first number:"))
+# # y=int(input("Enter the second number:"))
+
+# # obj=Math(x,y)
+# # obj.sum()
+# #child class  
+# class Math1(Math):
+# # Math1 inherit Math class
+#     def __init__(self,x,y):
+#         # self.x=x
+#         # self.y=y
+#         super().__init__(x,y)
+#          # it calls the variable from parent class
+#     def sub(self):
+#         print(self.x-self.y)
+
+# # x=int(input("Enter the first number:"))
+# # y=int(input("Enter the second number:"))
+# # obj_2=Math1(x,y)
+# # obj_2.sub()
+# # obj_2.sum()
+# class Math2(Math1):
+#     # Math2 inherits the Math1
+#     def __init__(self,x,y):
+#         super().__init__(x,y)
+#     def mult(self):
+#         print(self.x*self.y)
+
+# # x=int(input("Enter the first number:"))
+# # y=int(input("Enter the second number:"))
+# # obj_3=Math2(x,y)
+# # obj_3.mult()
+# # obj_3.sub()
+# # obj_3.sum()
+# class Math3(Math2):
+#     #Math3 inherits Math2
+#     def __init__(self,x,y):
+#         super().__init__(x,y)
+#     def div(self):
+#         print(self.x/self.y)
+# x=int(input("Enter the first number:"))
+# y=int(input("Enter the second number:"))
+# obj_4=Math3(x,y)
+# obj_4.div()
+# obj_4.mult()
+# obj_4.sub()
+# obj_4.sum()
+
+# >>----------------------Multiple Inheriatance------------------------<<
+class Math:
+    def __init__(self,x,y):
+        self.x=x
+        self.y=y
+    def sum(self):
+        return self.x+self.y
+class Math1:
+    def __init__(self,x,y):
+        self.x=x
+        self.y=y
+    def sub(self):
+        return self.x-self.y
+class Math2:
+    def __init__(self,x,y):
+        self.x=x
+        self.y=y
+    def mul(self):
+        return self.x*self.y
+class Math3:
+    def __init__(self,x,y):
+        self.x=x
+        self.y=y
+    def div(self):
+        return self.x/self.y
+
+class  Calculator(Math,Math1,Math2,Math3):
+    def __init__(self,x,y):
+        super().__init__(x,y)
+'''
+x=int(input("Enter the first number:"))
+y=int(input("Enter the second number:"))
+
+obj=Calculator(x,y)
+print(obj.sum())
+print(obj.sub())
+print(obj.mul())
+print(obj.div())
+'''
+
+    
