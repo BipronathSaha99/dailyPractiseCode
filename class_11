@@ -1,0 +1,102 @@
+# >>---------------------------------tuple------------------------------------<<
+# a=('q','v',6,6.5)
+# b=(a,54,'b','g')
+
+# print(a)
+# print(b,type(b))
+
+
+
+# >>----------------------add more tuple----------------------------------<<
+# t1=(1,2,3,4)
+# t2=(5,6,7)
+# t3=t1+t2
+# print(t3, type(t3))
+
+# >>>------------pack and unpack the value of tuple----------------------------<<<
+# a=[1,2,3,4]
+# b="Bipronath Saha"
+# c=1,2,3,5
+# # value pack
+# tup=(a,b,c)
+# print(tup,type(tup))
+# # value unpack
+# (s,v,t)=tup
+# print(s)
+# print(v)
+# print(t)
+
+# >>----------------------------finding element--------------------------------<<
+
+# a=1,2,3,4,5
+# print(a,type(a))
+# print(a[0])
+# print(a[1:4])
+# >>--------------------- indexing-------------------------------------<<
+# print(a.index(2))
+# >>------------------- Tuple function---------------------------------<<
+
+# a=1,2,3,4,5
+# print(sum(a))
+# playing with loop to find the sum of given tuple
+# s=0
+# for i in a:
+#     s+=i
+# print(s)    
+# print(max(a))
+# print(min(a))
+# print(len(a))
+# a=['Bipro','nath','Saha']
+# print(tuple(a))
+
+# >>------------------delete tuple-------------------------<<
+# a=('b','i','p','r','o','n','a','t','h')
+
+# del a    
+# print(a)
+
+# >>--------------- List------------------------------<<
+# fruits=['Black berry','Jack fruit','Mango','Ras berry','califlower','pompgranets']
+# print(fruits,type(fruits))
+# print(fruits[0])
+# print(fruits[1])
+# print(fruits[5])
+# print(fruits[0:6])
+# print(fruits[-1:0])
+
+# >>-----------------add elements-------------------------------------<<
+# fruits=['Black berry','Jack fruit','Mango','Ras berry','califlower','pompgranets']
+# fruits.append('Banana')
+# print(fruits)
+# fruits.append(['Apple','Tomato'])
+# print(fruits)
+# fruits.extend(['Guava','Lemon'])
+# print(fruits)
+# fruits.insert(2,'Cavage')
+# print(fruits)
+
+# >>---------------------- delete element---------------<<
+
+# a=[1,2,3,4,5,6]
+# a.remove(1)
+# print(a)
+# a.pop()
+# print(a)
+# a.pop(3)
+# print(a)
+# del a   
+# print(a)
+# >>----------------------sorting list------------------------<<
+# a=[1,5,3,2,5,7,8]
+# a.sort()
+# print(a)
+
+# a.sort(reverse=True)
+# print(a)
+
+# print(a.reverse())
+#>>-------------------List Function------------------------------<<
+# a=[1.9,3,2,5,6,8]
+# # print(sorted(a))
+
+# print(a.count(2))
