@@ -1,0 +1,61 @@
+#Exception Handaling
+
+'''def div(x,y):
+    
+    try:
+        z=x/y
+        return z
+    except ZeroDivisionError:
+        return "Error"
+    except TypeError:
+        return "str not accepted"
+    else:
+        z=x/y
+print(div(6,3))
+print(div(4,0))
+print(div('6','6'))
+'''
+'''def div(x,y):
+    
+    try:
+        z=x/y
+        return z
+    except (ZeroDivisionError):
+        return "Error"
+    else:
+        z=x/y
+    finally:
+        print("Hey! Bipro")
+print(div(6,3))
+print(div(4,0))
+print(div('6','6'))
+'''
+'''
+class NotAccepted(Exception):
+    def __init__(self,message,status):
+        super().__init__(message,status)
+        self.message=message
+        self.status=status
+
+def check(name):
+        if name in ('Bipronath','Partha','Pravin'):
+            raise NotAccepted("not accepted","4444")
+        return name
+try:
+    print(check('Bipronath'))
+except Exception as e:
+    print(e.status)
+'''
+import math
+values_float=[float(x) for x in input().split()]
+a=values_float[0]
+b=values_float[1]
+c=values_float[2] 
+try:
+    d=(pow(b,2)-4*a*c)
+    r1=(-b+math.sqrt(d))/(2*a)
+    r2=(-b-math.sqrt(d))/(2*a)
+    print("R1 = %0.5f"%r1)
+    print("R2 = %0.5f"%r2)     
+except:
+    print("Impossivel calcular")
