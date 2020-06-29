@@ -1,0 +1,23 @@
+#user creating module
+
+
+# from oop_2 import Calculator
+# import oop_2
+
+
+
+# x=int(input("Enter the first number:"))
+# y=int(input("Enter the second number:"))
+# # obj=Calculator(x,y)
+# obj=oop_2.Calculator(x,y)
+
+# print(obj.sum())
+# print(obj.sub())
+# print(obj.mul())
+# print(obj.div())
+
+# print(dir(oop_2))
+
+
+from std import math_1
+math_1.sub(2,4)
