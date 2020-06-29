@@ -1,0 +1,60 @@
+# >>--------------------------Dictionary-------------------------------------<<
+data={'name':'Bipro','age':22,'marraied':'False','country':'Bangladesh'}
+# print(data,type(data))
+
+# >>--------------- Value access---------------<<
+
+# print("Name is:", data['name'])
+# print("Age is:", data['age'])
+# print("Marraige:", data['marraied'])
+# print("Country:", data['country'])
+
+# print(data.keys())
+# print(data.values())
+
+# print(data.keys(), data.values(),sep="@")
+# print(data.items())
+# print(data.items())
+# print(data.get('name'))
+
+# using loop to find the values & keys
+
+# for keys in data:
+    
+#     print(keys, end=" ")
+
+# for value in data.values():
+    
+#     print(value, end=" ")
+
+# # for x,y in data.items():
+# #     print(x,y)
+
+# for z in data.items():
+#     print(z,type(z))
+
+# update
+# a={1:'one','two':2,3:'three'}
+# b={4:'four',5:'five','six':6}
+# a.update(b)
+# print(a)
+# b.update(a)
+# print(b)
+#clear
+# a={1:'one','two':2,3:'three'}
+# a.clear()
+# print(a)
+# pop
+
+# a.pop('two')
+# print(a)
+
+# popitem
+# a.popitem()
+# print(a)
+
+# del a   
+# print(a)
+a={1:'one','two':2,3:'three'}
+a1=a.copy()
+print(a1)
