@@ -1,0 +1,121 @@
+# >>--------------------------Area Of Triangle----------------------------------<<
+# from math import sqrt
+# def area(a,b,c):
+#     s=(a+b+c)/2
+#     area=sqrt(s*(s-a)*(s-b)*(s-c))
+#     print(f"Area of Triangle={area}")
+# a=float(input("Side_1="))
+# b=float(input("Side_2="))
+# c=float(input("Side_3="))
+# area(a,b,c)
+# >>-----------------------------Quardic Equation----------------------------------------<<
+# from math import sqrt
+# def quardic(a,b,c):
+#     d=(pow(b,2)-4*a*c)
+#     if d==0:
+#         x=-b/(2*a)
+#         print(f"x={x:0.2f}")
+#     elif d>0:
+#         x_1=(-b+sqrt(d))/(2*a)
+#         x_2=(-b-sqrt(d))/(2*a)
+#         print(f"x_1 = {x_1:0.2f} x_2 = {x_2:0.2f} ",end=" ")
+#     else:
+#         print("The equation has no real roots")
+# a=int(input("a="))
+# b=int(input("b="))
+# c=int(input("c="))
+# quardic(a,b,c)
+# >>---------------------Convertion: km to mile------------------------------<<
+
+# def convertion(d):
+#     result=d*0.621
+#     return (f"Result = {result:0.2f}")
+
+# d=float(input("Please enter the units="))
+# print(convertion(d))
+
+# >>-----------------------------Find out Prime Number---------------------------------<<
+# n=int(input("Enter any number="))
+
+# if (n>1):
+#     for x in range(2,n):
+#         if n%x==0:
+#             # print(f"{n} is a prime number")
+#             print(f"{n} is not a  prime number.")
+#             break
+#     else:
+#         # print(f"{n} is not a prime number.")
+#         print(f"{n} is a prime number.")
+# else:
+#     print(f"{n} is not a prime number.")
+
+# n=int(input("Enter any number="))
+# def prime(n):
+#     if (n>1):
+#         for x in range(2,n):
+#             if n%x==0:
+#                 # print(f"{n} is a prime number")
+#                 print(f"{n} is not a  prime number.")
+#                 break
+#         else:
+#             # print(f"{n} is not a prime number.")
+#             print(f"{n} is a prime number.")
+#     else:
+#         print(f"{n} is not a prime number.")
+
+# prime(n)
+
+# >>------------------------Find out Prime Number for given range----------------------------------<<
+# range_1=int(input("Enter the first limit:"))
+# range_2=int(input("Enter the last limit:"))
+
+# for i in range(range_1,range_2+1):
+#     if i>1:
+#         for j in range(2,i):
+#             if i%j==0:
+#                 break
+#         else:
+#             print(i,end=" ")
+           
+# range_1=int(input("Enter the first limit:"))
+# range_2=int(input("Enter the last limit:"))
+# def prime(range_1,range_2):
+#     for i in range(range_1,range_2+1):
+#         if i>1:
+#             for j in range(2,i):
+#                 if i%j==0:
+#                     break
+#             else:
+#                 print(i,end=" ")
+
+# prime (range_1,range_2)           
+
+# >>--------------Factorial Number---------------------------------<<
+# num=int(input("Enter number="))
+# def fact(num):
+#     sum=1
+#     i=1
+#     while i<=num:
+#         sum=sum*i
+#         i=i+1
+#     print(f"Factorial of {num} is = {sum}")
+# fact(num)
+# >>-------------------Quadratic Equation--------------------------------<<
+from math import sqrt
+x=input("Gimme equation (ex:ax^2+bx+c):")
+a=int(input("From equation a="))
+b=int(input("From equation b="))
+c=int(input("From equation c="))
+d=pow(b,2)-4*a*c
+if d==0:
+    x=-b/(2*a)
+    print(f"{a}x**2+{b}x+c=0 has one root: x={x}")
+elif d>0:
+    x1=(-b+sqrt(d))/(2*a)
+    x2=(-b-sqrt(d))/(2*a)
+    print(f"{a}x**2+{b}x+c=0 has two real roots: x1={x1} and x2={x2}",end=" ")
+
+else:
+    real=-b/(2*a)
+    ima=abs(sqrt(d*(-1))/(2*a))
+    print(f"{a}x**2+{b}x+c=0 has two complex roots:{real:0.4f}+{ima:0.4f}i and {real:0.4f}-{ima:0.4f}i",end=" ")
