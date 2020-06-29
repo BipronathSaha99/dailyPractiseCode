@@ -1,0 +1,67 @@
+# >>-----------Python Lambda-----------------<<
+'''A lambda function is a small anonymous function.
+
+A lambda function can take any number of arguments, but can only have one expression.
+'''
+#lambda arguments : expression
+'''x=lambda a:a+10
+print(x(13))
+'''
+#x=lambda a:a+10;print(x(13))
+#def num(a):
+#    print(a+10)
+#(num(3))
+
+#Lambda functions can take any number of arguments:
+#x=lambda a,b:a**b;print(x(2,3))
+#y=lambda m,n:m*n ; print(y(2,3))
+
+#conditional expression
+
+#conditional expression is as like as ternary operator in C/c++
+#condition ? expression1: expression2
+#in python expression1 if conditon else expression
+'''y=10
+x=5
+y+=x if y%2==0 else 0
+print(y)
+'''
+# >>---------------Comprehension Syntax-------------------------<<
+# [expression for value in iterable if condition]
+#in list comprehensive expression
+#y=int(input())
+#num_square=[y**2 for y in range(0,y+1)]
+#print(num_square)
+# in dictionary comprehensive syntax 
+#num_square={v:v**2 for v in range(7) if v%2==0}
+#print(num_square)
+# without comprehensive expression
+#li=[]
+#for i in range(7):
+ #   li.append(i)
+    
+  #  if i%2==0:
+   #     print(i)
+ # without comprehensive expression
+ 
+#li=[]
+#for i in range(7):
+#    li.append(i)
+ #   if i%3==0:
+ #       print(i,end=' ')
+
+#x_set={p**2 for p in range(7) if p%2==0}
+#print(x_set,type(x_set))
+
+# note: reference type & value type
+#comperison between is and ==
+x=['10','a',20]
+y=x
+#print(x==y)
+#print(x is y)
+
+z=x.copy()
+print(x==z)
+print(x is z) 
+
+
