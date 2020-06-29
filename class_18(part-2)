@@ -1,0 +1,96 @@
+# >>-------------------Magic Method-----------------------------<<
+#USUAAL class and instance declaration
+# class Food:
+#     def __init__(self,a,b):
+#         self.a=a
+#         self.b=b
+#     def bar(self):
+#         pass
+# obj=Food('a','b')
+# obj.a=2
+# obj.b=3
+# print(obj.a)
+# print(obj.b)
+# obj.bar()
+# A class implementation with __str__methods
+"""__str__() method
+Another useful magic method is __str__(). 
+It is overridden to return a printable string representation of any user defined class. 
+We have seen str() built-in function which returns a string from the object parameter. 
+For example, str(12) returns '12'. When invoked, it calls the __str__() method in the int class."""
+'''Let us now override the __str__() method in the employee class to return a string 
+representation of its object.'''
+# class employee:
+#     def __init__(self):
+#         self.name="Bipronath"
+#         self.salary="10000"
+#     def __str__(self):
+#         return 'name:'+self.name+ '\n' 'salary:$'+self.salary
+
+# e=employee()
+# print(e.__str__()) 
+
+# class employee:
+#     def __init__(self,name,salary):
+#         self.name=name
+#         self.salary=salary
+#     def __str__(self):
+#         return 'name:'+self.name+ '\n' 'salary:$'+self.salary
+
+# e=employee('name','salary')
+# e.name="Bipronath"
+# e.salary="10,000"
+
+# print(e.__str__()) 
+
+# __add__() method
+# In following example, a class named distance is defined with two instance attributes - 
+# ft and inch. The addition of these two distance objects is desired to be performed 
+# using the overloading + operator.
+
+# To achieve this, the magic method __add__() is overridden, 
+# which performs the addition of the ft and inch attributes of the two objects. 
+# The __str__() method returns the object's string representation.
+
+# class Ruller:
+#     def __init__(self,ft,inch):
+#         self.ft=ft
+#         self.inch=inch
+#     def __add__(self,other):
+#         f=self.ft+other.ft
+#         i=self.inch+other.inch
+#         return (f+i//12,i%12)
+#     def __str__(self):
+#         return str(self.feet) + "'" + str(self.inches) + '"'
+
+# r1=Ruller(2,9)
+# r2=Ruller(3,7)
+# r3=r1+r2
+# print(r3)
+
+class Sum:
+    def __init__(self,a):
+        self.a=a
+        # self.b=b
+    # def __add__(self,other):
+    #     a=self.a+other.a
+    #     b=self.b+other.b
+        # return (a+b)
+    # def __str__(self):
+    #     return str(self.a)
+    # def __abs__(self):
+    #     return abs(self.a)
+    # def __pos__(self):
+    #     return (self.a+1)
+    def __neg__(self):
+        return (self.a-1)
+s=Sum(-2)
+print(s.__neg__())
+# s1=Sum(2,3)
+# s2=Sum(4,5)
+# s3=s1+s2
+# print(s3)
+
+
+
+
