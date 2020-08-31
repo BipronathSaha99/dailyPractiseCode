@@ -1,0 +1,15 @@
+#bubble sort 
+def sort(num):
+  #inner loop counts the number
+  for i in range(len(num)-1,0,-1):
+    #outer loop
+    for j in range(i):
+      if num[j]>num[j+1]:
+        #swap the numbers
+        num[j],num[j+1]=num[j+1],num[j]
+        
+    
+#input a list variable
+num=[1,4,2,3,7,6,5]
+sort(num)
+print(num)
