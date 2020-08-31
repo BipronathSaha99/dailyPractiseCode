@@ -1,0 +1,32 @@
+#binary search
+pos=-1
+def find(lis,x):
+	l=0
+	u=len(lis)-1
+	#create loop
+	for mid in range(l,u+1):
+		mid=(l+u)//2
+		#if the nid value is equal to the targeted element
+		if lis[mid]==x:
+			globals()['pos']=mid
+			return True
+		else:
+			#if the mid value is less than the targeted element
+			if lis[mid]<x:
+				l=mid+1
+			# if the mid value is greater than the targeted element
+			else:
+				u=mid-1
+	return False
+			
+#take a list with sorted elements  
+lis=[4,6,9,15,23]
+#targeted element 
+x=23
+
+#logic
+if find(lis,x):
+  print("Matched at",pos+1)
+else:
+  print("Not matched")
+
