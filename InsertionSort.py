@@ -3,15 +3,15 @@
 '''
 step-1:
 The first element in the array or list is assumed to be sorted. Take the sec0nd element and st0re it in a key.
-Compare key with the first element. If the first element is greater than key,then key is placed in front of the 
+Compare the key with the first element. If the first element is greater than key,then key is placed in front of the 
 first element .
 
 step-2:
 Now the first two elements are sorted.
-Take the third element and compare it with the elements on the left of it. Placed it just behind the element smaller than it,then place it at the beginning of the arrasy.
+Take the third element and compare it with the elements on the left of it. Placed it just behind the element smaller than it,then place it at the beginning of the array.
 
 step-3:
-Similarly, placed every unsdorted element at its correct positon.
+Similarly, placed every unsorted element at its correct positon.
 
 '''
 
